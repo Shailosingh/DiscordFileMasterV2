@@ -27,5 +27,20 @@ namespace DiscordFileMasterV2
         {
             this.InitializeComponent();
         }
+
+        private void FileSelectButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FolderSelectButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SplitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
