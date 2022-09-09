@@ -62,7 +62,7 @@ namespace DiscordFileMasterV2
             openPicker.FileTypeFilter.Add("*"); /*This field is REQUIRED on Windows 10 or it will crash 
                                                  * (https://github.com/microsoft/WindowsAppSDK/issues/1188). 
                                                  * It is also slow. Try seeking an alternative*/
-            openPicker.SettingsIdentifier = "Select File To Be Split";
+            openPicker.SettingsIdentifier = "File To Be Split";
 
             //Get file
             StorageFile file = await openPicker.PickSingleFileAsync();
@@ -89,7 +89,7 @@ namespace DiscordFileMasterV2
             openPicker.ViewMode = PickerViewMode.List;
             openPicker.CommitButtonText = "Select Folder";
             openPicker.FileTypeFilter.Add("*"); //This field is REQUIRED
-            openPicker.SettingsIdentifier = "Select Folder To Write Split Files";
+            openPicker.SettingsIdentifier = "Split Files Folder";
 
             //Get folder
             StorageFolder folder = await openPicker.PickSingleFolderAsync();
@@ -173,7 +173,7 @@ namespace DiscordFileMasterV2
                     this.DispatcherQueue.TryEnqueue(() =>
                     {
                         StatusBox.Text = $"Pieces Created: {currentNumFilesProcessed}/{fileMasterInstance.TotalFiles}";
-                        ProgressBar.Value = 100*(currentNumFilesProcessed / fileMasterInstance.TotalFiles);
+                        ProgressBar.Value = 100*((double)currentNumFilesProcessed / fileMasterInstance.TotalFiles);
                     });
                 }
             }

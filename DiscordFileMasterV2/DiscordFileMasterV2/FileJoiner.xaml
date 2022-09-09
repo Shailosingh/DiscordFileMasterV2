@@ -16,8 +16,8 @@
                 <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="FileDirectoryBox" IsEnabled="False" HorizontalAlignment="Stretch" Grid.Column="0"/>
-            <Button x:Name="FileSelectButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Click="FileSelectButton_Click"  Content="Select Input"/>
+            <TextBox x:Name="InputFolderDirectoryBox" IsEnabled="False" HorizontalAlignment="Stretch" Grid.Column="0"/>
+            <Button x:Name="InputFolderSelectButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Click="InputFolderSelectButton_Click"  Content="Select Input"/>
         </Grid>
 
         <TextBlock Text="Output Folder" Margin="0, 15, 0, 0"/>
@@ -27,8 +27,8 @@
                 <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="FolderDirectoryBox" IsEnabled="False" HorizontalAlignment="Stretch" Grid.Column="0"/>
-            <Button x:Name="FolderSelectButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Click="FolderSelectButton_Click"  Content="Select Output"/>
+            <TextBox x:Name="OutputFolderDirectoryBox" IsEnabled="False" HorizontalAlignment="Stretch" Grid.Column="0"/>
+            <Button x:Name="OutputFolderSelectButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Click="OutputFolderSelectButton_Click"  Content="Select Output"/>
         </Grid>
 
         <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0, 15, 0, 0">
@@ -56,7 +56,7 @@
             </Grid.ColumnDefinitions>
 
             <ProgressBar x:Name="ProgressBar" Grid.Column="0"/>
-            <Button x:Name="SplitButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Content="Split File"  Click="SplitButton_Click"/>
+            <Button x:Name="JoinButton" Grid.Column="1" Width="110" HorizontalAlignment="Center" Content="Join Files"  Click="JoinButton_Click"/>
         </Grid>
 
         <CheckBox x:Name="WillAutoLaunchFile" Content="Launch file on completion" Margin="0, 15, 0, 0" HorizontalAlignment="Right"/>
