@@ -1,6 +1,8 @@
 # DiscordFileMaster Version 2.0.0
 This program allows the user to split large files into 8 MB chunks for upload to Discord. It can also merge the 8 MB chunks back together. This is very useful for people who want to send large files in Discord to friends or use Discord as a storage medium for large files.
 
+![Coloured Logo](https://user-images.githubusercontent.com/52577016/202877254-afbdef52-9c1b-481e-acfb-b7e56dcf46bc.png)
+
 ## File Splitter
 The File Splitter is designed to take one large file and split it into 8 MB chunks. To use this, click "Select Input" and specify the file you wish to split. Then click "Select Output" and specify the folder you wish the pieces to be placed in. Finally click "Split Files" to finish the operation. That folder will open automatically upon completion.
 
