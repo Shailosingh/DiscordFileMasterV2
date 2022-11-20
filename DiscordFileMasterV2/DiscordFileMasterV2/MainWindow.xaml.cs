@@ -44,6 +44,9 @@ namespace DiscordFileMasterV2
             AppWindow APP_WINDOW = AppWindow.GetFromWindowId(windowId);
             APP_WINDOW.SetIcon(Path.Combine(Package.Current.InstalledLocation.Path, "Icon.ico"));
 
+            //Navigate to the Joiner on launch
+            ContentFrame.Navigate(typeof(FileJoiner));
+
         }
 
         //Public Window Helpers----------------------------------------------------------------------------------------------------------------------------------------------------
