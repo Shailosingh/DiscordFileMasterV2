@@ -8,10 +8,14 @@
     <Platforms>x86;x64;arm64</Platforms>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="FileJoiner.xaml" />
     <None Remove="FileSplitter.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>

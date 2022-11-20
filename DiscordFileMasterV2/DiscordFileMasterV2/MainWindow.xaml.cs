@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using Microsoft.UI;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -10,8 +11,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Microsoft.UI.Windowing;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -34,6 +37,13 @@ namespace DiscordFileMasterV2
 
             //Set title
             this.Title = "Discord FileMaster";
+
+            //Set icon of window
+            IntPtr HWND = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            WindowId windowId = Win32Interop.GetWindowIdFromWindow(HWND);
+            AppWindow APP_WINDOW = AppWindow.GetFromWindowId(windowId);
+            APP_WINDOW.SetIcon(Path.Combine(Package.Current.InstalledLocation.Path, "Icon.ico"));
+
         }
 
         //Public Window Helpers----------------------------------------------------------------------------------------------------------------------------------------------------
