@@ -12,3 +12,6 @@ The File Splitter is designed to take one large file and split it into 8 MB chun
 The File Joiner is designed to take a folder of 8 MB chunks made by the File Splitter and merge it back into one large file. To use this, click "Select Input" and specify the folder with the file chunks to be linked (make sure you don't have random chunks from previous splits in this folder, this could cause unexpected behaviour).  Then click "Select Output" and specify the folder you want the merged file to be placed into. Finally, specify the filename and extension of the newly merged file and press "Join Button" to finish the operation. If you have "Launch file on completion" checked, the file wil open automatically. Regardless, the folder with the merged file will open.  
 
 ![Joiner Screenshot](https://user-images.githubusercontent.com/52577016/202876832-15cc23a3-71e8-4f62-bf3a-663905034c5b.png)
+
+## Technologies
+This application was written using C# and WinUI 3. The code for the file splitting and joining, is handled by my NuGET package [FileMaster Library](https://github.com/Shailosingh/FileMaster-Library)
